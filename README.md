@@ -3,6 +3,8 @@ Running long processes from django is hard.  There are many service based soluti
 
 This lib spawns a new process from a django session.  Typically used to run manage.py commands.  If you need communication back to django, I use memcached to excahnge data.
 
+posix_spawn() is ideal to use over fork() because it doesn't copy your database/network/file sockets to the new process.  Running fork() inside django can cause major issues if you don't clean up correctly.
+
 ## Usage
 
 I assume your django app name is: **website**
