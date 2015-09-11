@@ -1,3 +1,3 @@
-from ._impl import posix_spawn, posix_spawnp, FileActions
+from ._impl import run_manage, posix_spawn, posix_spawnp, FileActions
 
-__all__ = ['posix_spawn', 'posix_spawnp', 'FileActions']
+__all__ = ['run_manage', 'posix_spawn', 'posix_spawnp', 'FileActions']
