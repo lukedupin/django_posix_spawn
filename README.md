@@ -16,7 +16,7 @@ I assume your django app name is: **website**
 		from website.libs.django_posix_spawn import posix_spawn, run_manage
 		
 			#same as running: Echo 9
-		posix_spawn( '/usr/bin/echo', ['9]) 
+		posix_spawn( '/usr/bin/echo', ['9']) 
 		
 			#same as runing: /usr/bin/python manage.py migrate
 		run_manage( 'migrate' )
